@@ -228,17 +228,6 @@ Made with 💚 for the Filipino community
 </div>
 ```
 
----
-
-# GitHub Repository Description (Short)
-```
-LinkNayan 💚 [WIP] - Learning to build AI-powered mental health resource finder for Filipinos. Matches users with crisis hotlines, therapists & support groups. My first AI project (CS freshman). Built with Python, UV, OpenRouter. NOT medical advice. Feedback welcome!
-```
-
-**Character count:** 295 (under 350 limit)
-
----
-
 # GitHub Topics/Tags
 ```
 work-in-progress
