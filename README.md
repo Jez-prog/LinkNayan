@@ -226,22 +226,3 @@ Building in public as part of my AI learning journey
 Made with 💚 for the Filipino community
 
 </div>
-```
-
-# GitHub Topics/Tags
-```
-work-in-progress
-learning-project
-mental-health
-philippines
-ai
-openrouter
-python
-cli
-student-project
-first-project
-crisis-resources
-filipino
-beginner-friendly
-uv
-social-impact
