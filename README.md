@@ -119,7 +119,7 @@ This is my **first AI project** as a CS freshman. Through this I'm learning:
 - [ ] Implement crisis detection
 - [ ] Create basic CLI interface
 
-**Medium-term (Next month):**
+**Medium-term:**
 - [ ] Test with real scenarios
 - [ ] Add more resources
 - [ ] Improve accuracy
@@ -189,7 +189,7 @@ Don't wait for this tool to be finished - these resources are available now!
 ## 📧 Contact
 
 **Developer:** Jezreel E. Guillermo
-**GitHub:** [@Jeshz-Dev](https://github.com/Jez-prog/LinkNayan.git))  
+**GitHub:** [@Jeshz-Dev](https://github.com/Jez-prog/LinkNayan.git)
 **Email:** jezreeleguillermo@gmail.com
 
 **Status updates:** Follow this repo or check commit history
@@ -208,6 +208,6 @@ MIT License - feel free to learn from or fork this code!
 
 Building in public as part of my AI learning journey
 
-Made with 💚 for the Filipino community
+Made with 💚 by Jesh-Dev
 
 </div>
