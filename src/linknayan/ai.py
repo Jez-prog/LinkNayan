@@ -9,13 +9,7 @@ client = OpenAI(
     base_url= OPENROUTER_BASE_URL,
     api_key = OPENROUTER_API_KEY,
 )
-
-
-def detect_crisis():
-    text_lower = text.lower()
-
-
-    crisi_keywords = {
+crisi_keywords = {
         "english": [
             "suicide", "kill myself","end my life", "don't want to live",
         "harm myself", "self harm", "cutting", "overdose", "jump",
@@ -28,6 +22,12 @@ def detect_crisis():
         ]
     }
 
+
+def detect_crisis():
+    text_lower = text.lower()
+
+
+    
 if __name__ == "__name__":
     print(detect_crisis("I want to kill myslef."))
     
