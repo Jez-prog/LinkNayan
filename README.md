@@ -1,18 +1,20 @@
-# LinkNayan 💚
+# LinkNayan
 
-> **⚠️ WORK IN PROGRESS** - This project is currently under active development as part of my AI learning journey.
+> **WORK IN PROGRESS** - This project is currently under active development as part of my AI learning journey.
 
 **Your bridge to mental health support in the Philippines**
 
 ---
 
-## 🎯 What is this?
+## What is this?
 
 LinkNayan is an AI-powered CLI tool I'm building to help Filipinos find mental health resources. Instead of Googling and getting overwhelmed, users can describe their situation in plain language and get matched with appropriate resources like crisis hotlines, therapists, and support groups.
 
+"LinkNayan" = "Link" + "Nayan" (Tagalog for "ours")
+
 ---
 
-## ⚠️ Important Disclaimer
+## Important Disclaimer
 
 This is **NOT** medical advice or a replacement for professional help. It's an information tool to help people find resources. Always consult mental health professionals for actual treatment.
 
@@ -20,47 +22,45 @@ This is **NOT** medical advice or a replacement for professional help. It's an i
 
 ---
 
-## 🚀 Current Status
+## Current Status
 
-**Phase:** Building core features
+**Phase:** Building core features (Active development)
 
 **What works:**
-- ✅ Project setup with UV
-- ✅ OpenRouter AI integration
-- ⏳ Resource database (in progress)
-- ⏳ Situation analysis (in progress)
-- ⏳ CLI interface (in progress)
+- Project setup with UV
+- OpenRouter AI integration (config.py done)
+- Resource database structure (hotlines, professionals, resources JSON files)
+- Resource loader (resources.py done)
 
-**What's planned:**
-- Crisis detection
-- Resource matching
-- Location-based filtering
-- Tagalog support (future)
+**In progress:**
+- Crisis detection (ai.py)
+- Situation analysis (ai.py)
+
+**Not started yet:**
+- CLI interface (main.py)
+- Web app (Streamlit)
+
+Honest note: Progress has been slow — this is a solo project built while studying full-time as a first-year CS student. Building it properly matters more than building it fast.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Python 3.11+** - Modern Python
+- **Python 3.11+**
 - **UV** - Fast package manager (replaces pip/venv)
-- **OpenRouter** - Free AI models (GPT, Gemini, LLama)
+- **OpenRouter** - Free AI models (GPT-OSS 120B)
 - **OpenAI SDK** - API integration
 
-**Why these choices?**
-- UV: 10-100x faster than pip, modern
-- OpenRouter: Free tier for learning, multiple models
-- CLI: Accessible, no hosting needed, privacy-first
-
 ---
 
-## 📦 Installation (for testing)
+## Installation (for testing)
 
-**Prerequisites:**
+Prerequisites:
 - Python 3.11+
 - UV package manager
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/linknayan.git
+git clone https://github.com/Jez-prog/LinkNayan.git
 cd linknayan
 
 # Install UV (if needed)
@@ -76,138 +76,87 @@ echo "OPENROUTER_API_KEY=your-key-here" > .env
 uv run linknayan
 ```
 
-**Get free API key:** https://openrouter.ai/keys
+Get free API key: https://openrouter.ai/keys
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 ```
 linknayan/
 ├── src/linknayan/
-│   ├── main.py        # CLI interface (building)
-│   ├── ai.py          # AI integration (building)
-│   ├── resources.py   # Resource loader (building)
-│   └── config.py      # Config (done)
+│   ├── config.py      # Done
+│   ├── resources.py   # Done
+│   ├── ai.py          # In progress
+│   ├── main.py        # Not started
+│   └── __init__.py
 ├── data/
-│   ├── hotlines.json       # Crisis hotlines (researching)
-│   ├── professionals.json  # Mental health services (researching)
-│   └── resources.json      # Self-help resources (researching)
+│   ├── hotlines.json       # Done
+│   ├── professionals.json  # Done
+│   └── resources.json      # Done
 ├── pyproject.toml
 └── README.md
 ```
 
 ---
 
-## 📚 What I'm Learning
+## What I'm Learning
 
-This is my **first AI project** as a CS freshman. Through this I'm learning:
+This is my first AI project as a first-year CS student. Through this I'm learning:
 
-- ✅ Working with AI APIs (OpenRouter/OpenAI)
-- ✅ Modern Python tooling (UV)
-- ✅ Prompt engineering
-- ⏳ Building ethical AI (crisis detection, safety)
-- ⏳ Resource verification and curation
-- ⏳ CLI design and user experience
+- Working with AI APIs (OpenRouter)
+- Modern Python tooling (UV)
+- JSON data management
+- Python project structure
+- Prompt engineering
+- Building ethical AI (crisis detection, safety)
+- CLI design and user experience
 
 ---
 
-## 🎯 Goals
+## Goals
+
+**Immediate (this week):**
+- Finish ai.py (detect_crisis, analyze_situation)
+- Build main.py (CLI interface)
+- Get working end-to-end prototype
 
 **Short-term:**
-- [ ] Complete resource database (hotlines, services)
-- [ ] Build situation analysis with AI
-- [ ] Implement crisis detection
-- [ ] Create basic CLI interface
+- Convert CLI to Streamlit web app
+- Deploy to public URL
+- User testing with 5-10 people
 
-**Medium-term:**
-- [ ] Test with real scenarios
-- [ ] Add more resources
-- [ ] Improve accuracy
-- [ ] Get feedback from mental health community
-
-**Long-term (Future):**
-- [ ] Web interface (Streamlit)
-- [ ] Tagalog language support
-- [ ] Location-based filtering
-- [ ] Partnership with mental health orgs
+**Long-term:**
+- Tagalog language support
+- Location-based filtering
+- Messenger bot integration
+- Partnership with mental health orgs
 
 ---
 
-## 🤝 Feedback Welcome!
+## Crisis Resources
 
-Since this is a learning project, I'd love feedback on:
-- Resource accuracy (are these hotlines correct?)
-- Code structure (better ways to organize?)
-- AI prompts (how to improve categorization?)
-- Features (what would be most helpful?)
+If you or someone needs help NOW, don't wait for this tool:
 
-**Note:** I'm still learning, so code quality is improving as I go!
-
----
-
-## 🙏 Resources Being Compiled
-
-Currently researching and verifying:
-
-**Crisis Hotlines:**
-- NCMH Crisis Hotline: 0917-899-8727
+- NCMH Crisis Hotline: 0917-899-8727 (24/7, free)
+- Emergency: 911
 - In Touch Crisis Line: (02) 8893-7603
-- (Adding more...)
-
-**Professional Services:**
-- National Center for Mental Health
-- Online therapy platforms (Silakbo, MindNation)
-- (Adding more...)
-
-*All resources will be verified before launch.*
 
 ---
 
-## ⚠️ Known Issues / TODO
+## Contact
 
-- [ ] Resource database incomplete
-- [ ] Crisis detection needs testing
-- [ ] AI categorization needs refinement
-- [ ] No error handling yet
-- [ ] CLI interface rough
-- [ ] Need more Filipino resources
-
----
-
-## 🆘 Crisis Resources
-
-**If you or someone needs help NOW:**
-
-- **NCMH Crisis Hotline:** 0917-899-8727 (24/7, free)
-- **Emergency:** 911
-- **In Touch Crisis Line:** (02) 8893-7603
-
-Don't wait for this tool to be finished - these resources are available now!
-
----
-
-## 📧 Contact
-
-**Developer:** Jezreel E. Guillermo
-**GitHub:** [@Jeshz-Dev](https://github.com/Jez-prog/LinkNayan.git)
+**Developer:** Jezreel E. Guillermo  
+**GitHub:** [@CyberJeshz](https://github.com/CyberJeshz/LinkNayan.git)  
 **Email:** jezreeleguillermo@gmail.com
 
-**Status updates:** Follow this repo or check commit history
-
 ---
 
-## 📄 License
+## License
 
 MIT License - feel free to learn from or fork this code!
 
 ---
 
-<div align="center">
+Solo project. Built slowly but built properly.
 
-**🚧 Under Development 🚧**
-
-Building in public as part of my AI learning journey
-
-Made with 💚 by CyberJeshz
-
-</div>
+Made with love by CyberJeshz
