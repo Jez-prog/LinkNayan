@@ -36,13 +36,40 @@ def detect_crisis(text):
     return False
 
 
+def call_ai(promt, system_message):
+
+    try:
+        message = [
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": promt}
+        ]
+
+        tubag = client.chat.completions.create(
+            model=MODEL,
+            max_tokens=MAX_TOKENS,
+            temperature=0.7,
+            messages=message
+        )
+        return tubag.choices[0].message.content
+    
+    except Exception as e:
+        print(f"Something failed: {e}")
+        return None
+
+
+
+
 if __name__ == "__main__":
     print(detect_crisis("I want to kill myself."))
     print(detect_crisis("I feel anxious today"))
     print(detect_crisis("gusto kong mamatay maem"))
     print(detect_crisis("gi kapoy najud ko bai ai shet"))
 
+    test_promt = "Hello! Who are You?"
+    test_system = "You are Gay."
 
+    resul = call_ai(test_promt, test_system)
+    print(f"The efing result is: {resul}")
 """
 outputs:
  uv run python -m src.linknayan.ai
