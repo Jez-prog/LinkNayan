@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import os
 from openai import OpenAI
 from .config import OPENROUTER_API_KEY, OPENROUTER_BASE_URL, MODEL, MAX_TOKENS
+import time
 
 client = OpenAI(
     base_url= OPENROUTER_BASE_URL,
@@ -66,10 +67,11 @@ if __name__ == "__main__":
     print(detect_crisis("gi kapoy najud ko bai ai shet"))
 
     test_promt = "Hello! Who are You?"
-    test_system = "You are Gay."
+    test_system = "You are Gay Nigger."
 
     resul = call_ai(test_promt, test_system)
     print(f"The efing result is: {resul}")
+    time.sleep(5)
 """
 outputs:
  uv run python -m src.linknayan.ai

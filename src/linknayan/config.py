@@ -15,7 +15,7 @@ if not OPENROUTER_API_KEY:
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
-MODEL = "openai/gpt-oss-120b:free"
+MODEL = "google/gemini-flash-1.5:free"
 
 MAX_TOKENS = 1500
 TEMPERATURE =  0.7
