@@ -15,7 +15,7 @@ if not OPENROUTER_API_KEY:
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
-MODEL = "google/gemini-flash-1.5:free"
+MODEL = "qwen/qwen3.6-plus:free"
 
 MAX_TOKENS = 1500
 TEMPERATURE =  0.7

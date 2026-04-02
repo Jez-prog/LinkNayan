@@ -1,5 +1,21 @@
 {
     "money": 0,
-    "pets": [],
+    "pets": [
+        {
+            "specie": "Pig",
+            "name": "Raúl",
+            "color": "Adult"
+        },
+        {
+            "specie": "Parrot",
+            "name": "Chao",
+            "color": "Green Adult"
+        },
+        {
+            "specie": "Junimo",
+            "name": "Alex",
+            "color": "Pink"
+        }
+    ],
     "decoration": []
 }
