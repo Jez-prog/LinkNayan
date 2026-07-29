@@ -10,8 +10,6 @@
 
 LinkNayan is an AI-powered CLI tool I'm building to help Filipinos find mental health resources. Instead of Googling and getting overwhelmed, users can describe their situation in plain language and get matched with appropriate resources like crisis hotlines, therapists, and support groups.
 
-"LinkNayan" = "Link" + "Nayan" (Tagalog for "ours")
-
 ---
 
 ## Important Disclaimer
@@ -114,11 +112,6 @@ This is my first AI project as a first-year CS student. Through this I'm learnin
 ---
 
 ## Goals
-
-**Immediate (this week):**
-- Finish ai.py (detect_crisis, analyze_situation)
-- Build main.py (CLI interface)
-- Get working end-to-end prototype
 
 **Short-term:**
 - Convert CLI to Streamlit web app
